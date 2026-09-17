@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ritika Kumari Gupta — Oasis Infobyte (OIBSIP) Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --accent: #8b5cf6;
+      --bg: #070b14;
+      --card-bg: #111a2d;
+      --card-hover: #17243e;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --border: rgba(255, 255, 255, 0.08);
+      --radius: 18px;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-image: radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.15), transparent 50%),
+                        radial-gradient(circle at 10% 80%, rgba(59, 130, 246, 0.12), transparent 50%);
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 50px 0;
+      flex: 1;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--primary);
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.28);
+      padding: 6px 18px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+    h1 span {
+      background: linear-gradient(135deg, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0 auto 24px;
+    }
+    .links-bar {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .link-pill {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      padding: 8px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .link-pill:hover {
+      color: #fff;
+      border-color: var(--primary);
+      background: rgba(59, 130, 246, 0.15);
+      transform: translateY(-2px);
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 34px 28px;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(59, 130, 246, 0.45);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+      background: var(--card-hover);
+    }
+    .card-tag {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      align-self: flex-start;
+      margin-bottom: 18px;
+    }
+    .tag-blue { background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+    .tag-purple { background: rgba(139, 92, 246, 0.15); color: #a78bfa; border: 1px solid rgba(139, 92, 246, 0.3); }
+    .tag-emerald { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .card-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .card-desc {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+    .tech-badges {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 26px;
+    }
+    .tech-pill {
+      font-size: 0.78rem;
+      padding: 4px 10px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: #cbd5e1;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(59, 130, 246, 0.35);
+    }
+    .btn-primary:hover {
+      filter: brightness(1.1);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+    }
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      font-size: 0.85rem;
+      color: #64748b;
+      border-top: 1px solid var(--border);
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      .cards-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="badge">Oasis Infobyte Internship &bull; Level 1</div>
+      <h1>Ritika Kumari Gupta <span>Web Projects</span></h1>
+      <p class="subtitle">
+        Explore the tasks completed for the Web Development & Designing internship program. Built using pure HTML5 and modern CSS3.
+      </p>
+      <div class="links-bar">
+        <a href="https://github.com/ritikakumarigupta/OIBSIP" target="_blank" rel="noopener noreferrer" class="link-pill">GitHub Repository ↗</a>
+        <a href="https://www.linkedin.com/in/ritika-kumari-gupta-6544b8310" target="_blank" rel="noopener noreferrer" class="link-pill">LinkedIn Profile ↗</a>
+        <a href="mailto:ritikakumarigupta17@gmail.com" class="link-pill">Email Contact ✉</a>
+      </div>
+    </header>
+
+    <div class="cards-grid">
+      <!-- Task 2 Card: Personal Portfolio -->
+      <div class="card">
+        <span class="card-tag tag-purple">Task 2 &bull; Portfolio</span>
+        <h2 class="card-title">Personal Portfolio Website</h2>
+        <p class="card-desc">
+          A personal digital résumé showcasing professional photo, role, technical skills, featured live projects, smooth navigation, and direct contact form. Fully responsive for both desktop and mobile devices.
+        </p>
+        <div class="tech-badges">
+          <span class="tech-pill">HTML5</span>
+          <span class="tech-pill">CSS3</span>
+          <span class="tech-pill">Responsive Design</span>
+          <span class="tech-pill">Mobile Nav</span>
+        </div>
+        <a href="WebDev-L1-Portfolio/index.html" class="btn btn-primary">Open Portfolio Website ↗</a>
+      </div>
+
+      <!-- Task 1 Card: Landing Page -->
+      <div class="card">
+        <span class="card-tag tag-blue">Task 1 &bull; Landing Page</span>
+        <h2 class="card-title">NovaFlow Landing Page</h2>
+        <p class="card-desc">
+          A static landing page built for a modern workflow automation SaaS platform. Features sticky navigation, hero with CSS dashboard mockup, 5 distinct content sections, pricing tiers, and footer.
+        </p>
+        <div class="tech-badges">
+          <span class="tech-pill">HTML5</span>
+          <span class="tech-pill">CSS3</span>
+          <span class="tech-pill">CSS Grid</span>
+          <span class="tech-pill">No JavaScript</span>
+        </div>
+        <a href="WebDev-L1-LandingPage/index.html" class="btn btn-primary">Open Landing Page ↗</a>
+      </div>
+
+      <!-- Task 3 Card: Temperature Converter -->
+      <div class="card">
+        <span class="card-tag tag-emerald">Task 3 &bull; Web App</span>
+        <h2 class="card-title">Temperature Converter</h2>
+        <p class="card-desc">
+          An interactive temperature conversion utility capable of transforming Celsius, Fahrenheit, and Kelvin in real time with comprehensive input validation.
+        </p>
+        <div class="tech-badges">
+          <span class="tech-pill">HTML5</span>
+          <span class="tech-pill">CSS3</span>
+          <span class="tech-pill">JavaScript</span>
+        </div>
+        <a href="WebDev-L1-TemperatureConverter/converter.html" class="btn btn-primary">Open Converter ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 Ritika Kumari Gupta &bull; Oasis Infobyte Student Internship Program (OIBSIP)
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/portfolio", "destination": "/WebDev-L1-Portfolio/index.html" },
+    { "source": "/landing-page", "destination": "/WebDev-L1-LandingPage/index.html" },
+    { "source": "/temperature-converter", "destination": "/WebDev-L1-TemperatureConverter/converter.html" }
+  ]
+}
