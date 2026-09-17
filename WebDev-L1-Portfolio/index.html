@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ritika Kumari Gupta | Software Developer Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-bracket">&lt;</span>Ritika<span class="logo-dot">.</span>dev<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Mobile Navigation Hamburger (Pure CSS) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-links">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="btn btn-primary nav-mobile-cta">Let's Connect</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-primary nav-cta">Let's Connect</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Profile Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge">
+            <span class="badge-wave">👋</span> Welcome to my Portfolio
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Ritika Kumari Gupta</span>
+          </h1>
+          <h2 class="hero-subtitle">Software Developer</h2>
+          <p class="hero-description">
+            Passionate about building robust web applications, writing clean code, and creating intuitive user experiences. Dedicated to continuous learning and solving real-world challenges through technology.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/ritikakumarigupta" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/ritika-kumari-gupta-6544b8310" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 0 0 1.6-1.6c0-.88-.72-1.6-1.6-1.6a1.6 1.6 0 0 0-1.6 1.6c0 .88.72 1.6 1.6 1.6m1.4 9.74v-8.37H5.06v8.37z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:ritikakumarigupta17@gmail.com" class="social-icon" aria-label="Send Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="image-border-glow"></div>
+          <div class="image-frame">
+            <img src="profile.jpg" alt="Ritika Kumari Gupta - Software Developer" class="profile-img">
+          </div>
+          <div class="floating-card">
+            <span class="pulse-dot"></span>
+            <span>Available for Opportunities</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get to know me</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-card main-card">
+            <p class="about-text">
+              Hello! I'm <strong>Ritika Kumari Gupta</strong>, an aspiring Software Developer committed to crafting clean, functional, and responsive digital solutions. I possess a strong foundation in modern web development, algorithms, and modular software architecture.
+            </p>
+            <p class="about-text">
+              My passion lies in transforming conceptual ideas into efficient, user-centric software that makes a meaningful difference. I thrive in collaborative environments, love learning cutting-edge technologies, and consistently strive to adhere to industry best practices in every project I undertake.
+            </p>
+            <div class="about-quick-actions">
+              <a href="#skills" class="btn btn-sm btn-outline">Explore Skills</a>
+              <a href="#projects" class="btn btn-sm btn-primary">See My Work</a>
+            </div>
+          </div>
+          <div class="about-stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">💻</div>
+              <div class="stat-body">
+                <h3 class="stat-title">Modern Web Tech</h3>
+                <p class="stat-desc">Hands-on experience building clean, responsive layouts using HTML5, CSS3, and JavaScript.</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🎯</div>
+              <div class="stat-body">
+                <h3 class="stat-title">Problem Solving</h3>
+                <p class="stat-desc">Focus on optimal logic, structured data handling, and maintainable software design.</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🚀</div>
+              <div class="stat-body">
+                <h3 class="stat-title">Goal Driven</h3>
+                <p class="stat-desc">Passionate about building impact-driven portals and engaging digital portfolios.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My Expertise</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon">🌐</span>
+              <h3 class="category-title">Frontend Development</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-badge">HTML5</span>
+              <span class="skill-badge">CSS3</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">Responsive Design</span>
+              <span class="skill-badge">Flexbox & Grid</span>
+              <span class="skill-badge">Modern UI/UX</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 2 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon">⚙️</span>
+              <h3 class="category-title">Programming & Core</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-badge">C / C++</span>
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">Data Structures</span>
+              <span class="skill-badge">OOP Concepts</span>
+              <span class="skill-badge">Algorithms</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 3 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon">🛠️</span>
+              <h3 class="category-title">Tools & Development</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">GitHub</span>
+              <span class="skill-badge">VS Code</span>
+              <span class="skill-badge">Vercel Deployment</span>
+              <span class="skill-badge">Web Standards</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Key Projects</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: E-Government Portal -->
+          <article class="project-card">
+            <div class="project-banner project-banner-1">
+              <div class="project-icon-badge">🏛️</div>
+              <span class="project-type-badge">Live Platform</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-Government Portal</h3>
+              <p class="project-description">
+                A comprehensive digital governance platform designed to streamline citizen access to public services, online registrations, and transparent scheme tracking. Built with high accessibility, responsive layouts, and user-centric navigation.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">Responsive Design</span>
+                <span class="tech-pill">Vercel</span>
+              </div>
+              <div class="project-links">
+                <a href="https://e-goverance-portal.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/ritikakumarigupta" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  <span>GitHub Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Karmayog Studio Portfolio -->
+          <article class="project-card">
+            <div class="project-banner project-banner-2">
+              <div class="project-icon-badge">🎨</div>
+              <span class="project-type-badge">Live Showcase</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Karmayog Studio Portfolio</h3>
+              <p class="project-description">
+                A sleek, contemporary digital portfolio crafted for Karmayog Studio. Emphasizes artistic brand presentation, interactive project showcases, elegant typography, and mobile-first responsiveness to highlight creative works seamlessly.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">Modern UI/UX</span>
+                <span class="tech-pill">Vercel</span>
+              </div>
+              <div class="project-links">
+                <a href="https://piyush-portfolio-w1vk.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/ritikakumarigupta" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  <span>GitHub Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Cards -->
+          <div class="contact-info">
+            <h3 class="contact-info-heading">Reach Out Directly</h3>
+            <p class="contact-info-desc">
+              Whether you have an inquiry, open software developer opportunity, or would like to collaborate, feel free to drop me a message!
+            </p>
+
+            <div class="contact-cards">
+              <!-- Email Card -->
+              <a href="mailto:ritikakumarigupta17@gmail.com" class="contact-detail-card">
+                <div class="contact-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-card-label">Email</span>
+                  <span class="contact-card-value">ritikakumarigupta17@gmail.com</span>
+                </div>
+              </a>
+
+              <!-- LinkedIn Card -->
+              <a href="https://www.linkedin.com/in/ritika-kumari-gupta-6544b8310" target="_blank" rel="noopener noreferrer" class="contact-detail-card">
+                <div class="contact-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 0 0 1.6-1.6c0-.88-.72-1.6-1.6-1.6a1.6 1.6 0 0 0-1.6 1.6c0 .88.72 1.6 1.6 1.6m1.4 9.74v-8.37H5.06v8.37z"/>
+                  </svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-card-label">LinkedIn</span>
+                  <span class="contact-card-value">ritika-kumari-gupta-6544b8310</span>
+                </div>
+              </a>
+
+              <!-- GitHub Card -->
+              <a href="https://github.com/ritikakumarigupta" target="_blank" rel="noopener noreferrer" class="contact-detail-card">
+                <div class="contact-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-card-label">GitHub</span>
+                  <span class="contact-card-value">ritikakumarigupta</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-wrapper">
+            <form class="contact-form" action="mailto:ritikakumarigupta17@gmail.com" method="POST" enctype="text/plain">
+              <h3 class="form-title">Send a Message</h3>
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="name@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Inquiry / Job Opportunity" required>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" rows="4" class="form-textarea" placeholder="Write your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <p class="footer-name">Ritika Kumari Gupta</p>
+        <p class="footer-role">Software Developer | Digital Portfolio</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Ritika Kumari Gupta. All rights reserved.</p>
+        <a href="#hero" class="back-to-top" aria-label="Back to top">↑ Back to Top</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

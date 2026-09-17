@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter Tool</title>
+    <link rel="stylesheet" href="converter.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Temperature Converter</h2>
+        
+        <div class="form-group">
+            <label for="tempInput">Enter Temperature Value:</label>
+            <input type="text" id="tempInput" placeholder="e.g., 36.6">
+        </div>
+
+        <div class="form-group">
+            <label for="unitSelect">Select Unit:</label>
+            <select id="unitSelect">
+                <option value="celsius">Celsius (°C)</option>
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+            </select>
+        </div>
+
+        <button id="convertBtn">Convert Temperature</button>
+        <p id="errorMsg" class="error"></p>
+
+        <div class="results">
+            <h3>Converted Results:</h3>
+            <p>Celsius: <span id="resC">--</span></p>
+            <p>Fahrenheit: <span id="resF">--</span></p>
+            <p>Kelvin: <span id="resK">--</span></p>
+        </div>
+    </div>
+
+    <script src="converter.js"></script>
+</body>
+</html>

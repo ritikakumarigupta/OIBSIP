@@ -1,0 +1,13 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0fdf4; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+.card { background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 10px 15px rgba(0,0,0,0.05); width: 100%; max-width: 400px; border: 1px solid #d1fae5; }
+.card h2 { text-align: center; color: #047857; margin-bottom: 1.5rem; }
+.form-group { margin-bottom: 1rem; display: flex; flex-direction: column; gap: 0.4rem; }
+.form-group label { font-size: 0.9rem; font-weight: 600; color: #374151; }
+.form-group input, .form-group select { padding: 0.7rem; border: 1px solid #d1d5db; border-radius: 6px; font-size: 1rem; }
+button { width: 100%; padding: 0.75rem; background: #059669; color: #fff; border: none; border-radius: 6px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: background 0.3s; margin-top: 0.5rem; }
+button:hover { background: #047857; }
+.error { color: #dc2626; font-size: 0.85rem; margin-top: 0.5rem; text-align: center; }
+.results { margin-top: 1.5rem; background: #f9fafb; padding: 1rem; border-radius: 6px; border: 1px solid #e5e7eb; }
+.results h3 { font-size: 1rem; color: #047857; margin-bottom: 0.5rem; }
+.results p { font-size: 0.95rem; color: #1f2937; margin-bottom: 0.25rem; }
